@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Training Name"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/trainingName"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How much time do you have in mind?"
+        android:id="@+id/txtQuestion"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/trainingName"
+        android:layout_marginTop="10dp"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtQuestion"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/firstRelLayout"
+        >
+
+
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="minutes"
+        android:id="@+id/edtTime"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/edtTime"
+        android:text="minutes"
+        android:layout_centerInParent="true"
+        />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/secondRelLayout"
+        android:layout_below="@id/firstRelLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In which day you want to add your plan?"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:id="@+id/txtDay"
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_below="@+id/txtDay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thirdRelLayout"
+        android:layout_below="@+id/secondRelLayout"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:id="@+id/btnAdd"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_toRightOf="@+id/btnAdd"
+            android:id="@+id/btnCancel"
+            android:layout_marginLeft="20dp"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

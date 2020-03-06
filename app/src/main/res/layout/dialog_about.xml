@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="300dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="60dp"
+    android:layout_marginTop="80dp">
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preity Fokinii\nNuzhat Pagol\nDristy Valo\nTanhab Joss"
+            android:id="@+id/txtExplain"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="40dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtExplain"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+
+            android:text="Go back"
+            android:textSize="18dp"
+            android:id="@+id/btnGoBack"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
